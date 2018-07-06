@@ -33,4 +33,11 @@
         </ul>
     {% endif %}
 
+
+    {% for user in user_list %}
+        <p>{{ user }}</p>
+    {% empty %}
+        <p>No users in data base</p>
+    {% endfor %}
+
 {% endblock %}
